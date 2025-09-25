@@ -43,7 +43,8 @@ public class Soup {
     //returns the letters currently stored with the company name placed directly in the center of all
     //the letters
     public String companyCentered(){
-        return "";
+        int middle = (letters.length()/2);
+        return letters.substring(0,middle) + company + letters.substring(middle);
     }
 
 
@@ -54,7 +55,7 @@ public class Soup {
 
     //should remove "num" letters from a random spot in the string letters. You may assume num never exceeds the length of the string.
     public void removeSome(int num){
-
+        
     }
 
     //should remove the word "word" from the string letters. If the word is not found in letters then it does nothing.
